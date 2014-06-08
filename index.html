@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sky Storm</title>
+        <link rel="stylesheet" href="css/skystorm.css"/>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css"/>
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script charset="UTF-8" src="js/jquery.mobile-1.4.2.js"></script>
+        <script charset="UTF-8" src="js/cordova.js"></script>              
+    </head>
+    <body>
+        <header>Sky Storm</header>
+        <nav><ul class="nav-ul">
+            <li class='active'><a href="javascript:void(0);1" >People</a></li>
+            <li><a href="javascript:void(0);1">Account</a></li>
+            <li><a href="javascript:void(0);1">Vacancy</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="ui-grid-a" id="data-row-1">
+                <div class="ui-block-a">
+                    <img class="fl" src="img/p-logo-1.jpg"/>
+                    <div class="ui-bar ui-bar-e title" style="float:left;height:60px">Anil Vithani</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">CTO</div></div>
+            </div><!-- /grid-a -->
+            <div class="ui-grid-a" id="data-row-2" style="display:none;">
+                <div class="ui-block-a">
+                    <img src="img/p-logo-2.jpg" width="20" height="20"/>
+                    <div class="ui-bar ui-bar-e title" style="height:60px">Aakash Sahai</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">Software Engineer</div></div>
+            </div><!-- /grid-a -->
+            <div class="ui-grid-a" id="data-row-3" style="display:none;">
+                <div class="ui-block-a">
+                    <img src="img/p-logo-1.jpg" width="20" height="20"/>
+                    <div class="ui-bar ui-bar-e title" style="height:60px">Amit B</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">Team Lead</div></div>
+            </div><!-- /grid-a -->
+            <div class="ui-grid-a" id="data-row-4" style="display:none;">
+                <div class="ui-block-a">
+                    <img src="img/p-logo-4.jpg" width="20" height="20"/>
+                    <div class="ui-bar ui-bar-e title" style="height:60px">Ezra Chapman</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">Founder</div></div>
+            </div><!-- /grid-a -->
+            <div class="ui-grid-a" id="data-row-5" style="display:none;">
+                <div class="ui-block-a">
+                    <img src="img/p-logo-1.jpg" width="20" height="20"/>
+                    <div class="ui-bar ui-bar-e title" style="height:60px">Ben Carter</div></div>
+                <div class="ui-block-b"><div class="ui-bar ui-bar-e" style="height:60px">Head of Nothing</div></div>
+            </div><!-- /grid-a -->
+        </section>
+        <div class="ui-grid-solo">
+            <div class="ui-block-a"><button type="button" data-row="1" id="moreClick" onclick="loadMore(this);" data-theme="b">More</button></div>
+        </div>
+        <footer>Powered By @aakash</footer>
+        <script type="text/javascript">
+            document.addEventListener('deviceready', function(){
+                alert('Welcome to SkyStorm');
+            }, false);
+        function loadMore(obj) {
+            var rid = $(obj).attr('data-row');
+            if (rid < 5) {
+                $('#data-row-' + (parseInt(rid)+1)).show();
+                $(obj).attr('data-row', (parseInt(rid)+1));
+            } else {
+                alert('No more records');
+            }
+        }
+        </script>
+    </body>
+</html>

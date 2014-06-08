@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 8, 2014, 12:20:28 PM
+    Author     : aakash
+*/
+*{margin:0;padding:0;}
+body { background-color: lavender;height:100%}
+header { width:98% !important;height:20px !important;background-color:#000;padding: 5px;text-align: center;color:ivory}
+nav ul {list-style-type: none;
+background-image: url(http://www.secondpicture.com/tutorials/web_design/navi_bg.png);
+height: 40px;width: 100%;
+margin: auto;}
+nav ul li {float:left;}
+nav ul li a{background-image: url(http://www.secondpicture.com/tutorials/web_design/navi_bg_divider.png);
+background-repeat: no-repeat;
+background-position: right;
+padding-right: 17px;
+padding-left: 17px;
+display: block;
+line-height: 40px;
+text-decoration: none;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 21px !important;
+color: azure !important;
+font-weight: normal !important;
+//color: #371C1C;
+}
+section {clear:both;margin:10px 0px 10px 0px;min-height:380px;}
+.ui-block-a img {clear:left;float:left;width:40px;height:40px}
+.ui-block-a .title{ flaot:left; clear:none;}
+.fl{float:left;}
+.fr{float:right;}
+.ui-grid-a {border:2px solid firebrick !important;border-bottom: 1px; border-top: 1px;}
+.ui-grid-solo { width:100%;clear:both; }
+.ui-grid-solo button { width:98%;clear:both;display: inline-block;color:ivory;
+                      background-image: url(http://www.secondpicture.com/tutorials/web_design/navi_bg_divider.png);height:40px;}
+footer {
+    clear:both;float:left;width:95%;background-color: #000;vertical-align: middle;
+    text-align: right;text-decoration:ivory;text-decoration-style: wavy;
+    color:ivory;height:25px;padding:5px;
+}
